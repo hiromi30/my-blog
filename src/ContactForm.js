@@ -15,7 +15,7 @@ const ContactForm = () => {
       email: email.value,
       message: message.value,
     };
-    let response = await fetch.post("http://loaclhost:5000/contact", {
+    let response = await fetch.post("https://front-myblog.herokuapp.com/ContactForm", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
